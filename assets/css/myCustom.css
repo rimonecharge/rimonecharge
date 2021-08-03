@@ -1,0 +1,11 @@
+.menu-custom {
+    display: flex;
+	width: 100%;
+}
+.nav-btn {
+	width: 15%
+}	
+
+.marg-5-top {
+	margin-top: 5px;
+}
