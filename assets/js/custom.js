@@ -28,3 +28,6 @@ $(function(){
     });
     $("#footer").load("footer.html");
 });
+$(document).ready(function() {
+    $('.menu-link').bigSlide();
+});

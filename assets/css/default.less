@@ -23,6 +23,9 @@ Solution Page
         background: black;
       }
       .logo {
+        @media screen and (min-width: 768px) {
+          width: 23%;
+        }
         @media screen and (max-width: 768px) {
           padding: 0 5px !important;
         }
@@ -31,11 +34,67 @@ Solution Page
         }
       }
       .menu {
+
         .nav-wrapper {
           text-align: right;
-          ul {
+          #bmenu {
+            display: flex;
+            width: 100%;
+            li {
+              width: 15%;
+              font-weight: bold;
+            }
+          }
+          .menu-link {
+            padding: 10px;
+            color: #ffffff;
+            text-decoration: none;
+            background: #a19535;
+            margin-top: 10px;
+            display: inline-block;
+            @media screen and (min-width: 768px) {
+              display: none;
+            }
+          }
+          #menu.panel {
+            box-shadow: 1px 1px 5px grey;
+            .site-identity {
+              text-align: center;
+              img {
+                width: 100px;
+                margin: 20px 0;
+              }
+            }
+            ul {
+              padding: 0;
+              li {
+                list-style: none;
+                text-align: left;
+                a {
+                  background: #efefef;
+                  padding: 10px 20px;
+                  display: block;
+                  border-top: 1px solid #e0e0e0;
+                  margin-bottom: 7px;
+                }
+              }
+            }
+            .appsd {
+              margin: 0 10px;
+              margin-top: 20px;
+              a {
+                img {
+                  width: 100%;
+                  margin-bottom: 20px;
+                }
+              }
+            }
+          }
+
+          ul#bmenu {
             @media screen and (max-width: 768px) {
               padding: 0;
+              display: none;
             }
             li {
               display: inline-block;
@@ -52,6 +111,11 @@ Solution Page
           }
         }
       }
+
+
+
+
+
     }
     .video-background {
       top: 0;
@@ -115,6 +179,7 @@ Solution Page
         }
         span {
           display: block;
+          font-size: x-large;
         }
         img {
           width: 100%;
@@ -1175,4 +1240,17 @@ Solution Page
       }
     }
   }
+}
+
+
+//Mobile Menu
+.panel {
+  position: fixed;
+  left: -15.625em; /*left or right and the width of your navigation panel*/
+  width: 14.625em !important; /*should match the above value*/
+  border-radius: 0 !important;
+}
+
+.wrap {
+  position: relative;
 }
