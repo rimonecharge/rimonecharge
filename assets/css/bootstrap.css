@@ -107,7 +107,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: "monospace", monospace;
   font-size: 1em;
 }
 button,
@@ -3239,9 +3239,7 @@ tbody.collapse.in {
   border-bottom-left-radius: 0;
 }
 .btn-group .dropdown-toggle:active,
-.btn-group.open .dropdown-toggle {
-  outline: 0;
-}
+.btn-group.open .dropdown-toggle {outline: 0;}
 .btn-group > .btn + .dropdown-toggle {
   padding-right: 8px;
   padding-left: 8px;
@@ -3690,7 +3688,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 0px;
+    border-radius: 0;
   }
 }
 @media (min-width: 768px) {
@@ -3790,7 +3788,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 15px 15px;
+  padding: 15px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -4033,8 +4031,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-}
+.navbar-default .navbar-nav > .active > a:focus {}
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {

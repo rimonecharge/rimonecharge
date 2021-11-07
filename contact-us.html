@@ -12,12 +12,12 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Rimone EV charging network</title>
-    <meta name="description" content="Electric vehicle charging, Rimone charge, Fast charging for EV, electric vehicle charging stations around me, best charging station, best EV charging network company, rimone mobile app"/>
-    <meta name="author" content="Rimone"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/css/owl.carousel.min.css"></script>
     <script src="assets/js/external.js"></script>
     <script src="assets/js/custom.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="assets/js/email.js"></script>
 
 </head>
 <body class="contact">
@@ -32,7 +32,7 @@
                     <a href="#menu" class="menu-link">&#9776;</a>
                     <nav id="menu" class="panel" role="navigation">
                         <div class="site-identity">
-                            <img src="assets/images/logo.png" />
+                            <a href="index.html"><img src="assets/images/logo.png" />
                         </div>
                         <ul>
                             <li><a href="index.html">Home</a></li>
@@ -70,14 +70,14 @@
                   <span>Let us help You!!!</span>
                   <div class="form">
 
-                      <form aria-live="polite" data-ux="Form" class="">
-                          <input type="text" placeholder="First Name*" required />
-                          <input type="text" placeholder="Last Name*" required />
-                          <input type="email" placeholder="Email*" required />
-                          <input type="tel" placeholder="Phone Number*" required />
-                          <input type="text" placeholder="Compnay Name*" required />
-                          <textarea placeholder="Message*" required ></textarea>
-                          <input type="submit" value="SEND" />
+                      <form aria-live="polite" data-ux="Form" class="contactForm" onsubmit="return false;">
+                          <input type="text" placeholder="First Name*" name="first"  />
+                          <input type="text" placeholder="Last Name*" name="last" />
+                          <input type="text" placeholder="Email*" name="email"  />
+                          <input type="tel" placeholder="Phone Number*" name="phone"  />
+                          <input type="text" placeholder="Company Name*" name="company"  />
+                          <textarea placeholder="Message" name="message" ></textarea>
+                          <input type="submit" value="SEND" onclick="sendMail()" />
                           <p>
                             
                           </p>
