@@ -1,0 +1,316 @@
+/* ********************************************************  Home Bar  ********************************************************* */
+/* HOME BAR */
+/* H.1 Background */
+body header .header-innerwrapper {
+    background: rgba(0, 0, 0, 0.282);
+    position: absolute;
+    width: 100%;
+    z-index: 999999;
+    padding: 2px
+}
+
+@media screen and (max-width:768px) {
+    body header .header-innerwrapper {
+        padding: 1px 0;
+        background: black;
+    }
+}
+
+/* H.2 Logo Width */
+@media screen and (min-width:768px) {
+    body header .header-innerwrapper .logo {
+        width: 23%
+    }
+}
+
+body header .header-innerwrapper .logo img {
+    width: 55px
+}
+
+/* H.3 Logo Padding */
+@media screen and (max-width:768px) {
+    body header .header-innerwrapper .logo {
+        padding: 0 5px !important
+    }
+}
+
+
+/* H.4 Menu link for Small Screens  */
+body header .header-innerwrapper .menu .nav-wrapper {
+    text-align: right
+}
+
+body header .header-innerwrapper .menu .nav-wrapper .menu-link {
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    background: transparent;
+    font-size: xx-large;
+    margin-top: 10px;
+    display: inline-block;
+    line-height: 0.6
+}
+
+@media screen and (min-width:768px) {
+    body header .header-innerwrapper .menu .nav-wrapper .menu-link {
+        display: none
+    }
+}
+
+/* H.5 For Small Screens (full menu) */
+body header .header-innerwrapper .menu .nav-wrapper #bmenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%
+}
+
+body header .header-innerwrapper .menu .nav-wrapper #bmenu li {
+    width: 15%;
+    font-weight: bold
+}
+
+/* H.6 For Small Screens => Dropdown Menu */
+
+body header .header-innerwrapper .menu .nav-wrapper #menu.panel {
+    -webkit-box-shadow: 1px 1px 5px grey;
+    box-shadow: 1px 1px 5px grey
+}
+
+/* H.7 For Small Screens => Dropdown Menu */
+
+body header .header-innerwrapper .menu .nav-wrapper #menu.panel .site-identity {
+    text-align: center
+}
+/* H.8 - Logo for Site Idendity */
+body header .header-innerwrapper .menu .nav-wrapper #menu.panel .site-identity img {
+    width: 60px;
+    margin: 20px 0
+}
+
+body header .header-innerwrapper .menu .nav-wrapper #menu.panel ul {
+    padding: 0
+}
+/* H.9 => For Small Screens => Dropdown Menu => List Properties  */
+body header .header-innerwrapper .menu .nav-wrapper #menu.panel ul li {
+    list-style: none;
+    text-align: left
+}
+/* H.10 => For Small Screens => Dropdown Menu => List Properties => Color of Text  */
+body header .header-innerwrapper .menu .nav-wrapper #menu.panel ul li a {
+    display: block;
+    margin-bottom: 7px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 0, 0)
+}
+/* H.11 => App Logos */
+body header .header-innerwrapper .menu .nav-wrapper #menu.panel .appsd {
+    margin: 0 10px;
+    margin-top: 20px
+}
+
+body header .header-innerwrapper .menu .nav-wrapper #menu.panel .appsd a img {
+    width: 70%;
+    margin-bottom: 20px
+}
+
+@media screen and (max-width:768px) {
+    body header .header-innerwrapper .menu .nav-wrapper ul#bmenu {
+        padding: 0;
+        display: none
+    }
+}
+/* H.12 List formatting */
+body header .header-innerwrapper .menu .nav-wrapper ul#bmenu li {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    min-width: 18%;
+}
+
+body header .header-innerwrapper .menu .nav-wrapper ul#bmenu li a {
+    padding: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: white
+}
+
+@media screen and (max-width:768px) {
+    body header .header-innerwrapper .menu .nav-wrapper ul#bmenu li a {
+        padding: 5px
+    }
+}
+/* **********************************************************     Footer    ************************************************************** */
+/******** Section - Footer *********/
+.footer {
+    padding: 40px 20px;
+    background: black;
+    overflow: auto;
+    display: block
+}
+/* F.1 Signup section */
+.footer .f-wrapper {
+    border-bottom: 1px solid #f8e526;
+    overflow: auto;
+    padding: 30px 0
+}
+
+.footer span,
+.footer strong {
+    color: white;
+    font-size: 16px
+}
+
+.footer span {
+    margin-top: 20px;
+    display: inline-block
+}
+
+@media screen and (max-width:768px) {
+    .footer .cinfo {
+        margin-bottom: 30px
+    }
+}
+/* F.2 First Coloumn */
+.footer .cinfo p {
+    color: white;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+@media screen and (max-width:768px) {
+    .footer .cinfo p {
+        width: 100%
+    }
+}
+/* F.3 Email entry field margin */
+.footer .cinfo form {
+    margin-bottom: 20px
+}
+/* F.4 Email entry field formatting */
+.footer .cinfo form input {
+    width: 80%;
+    border: none;
+    background: none;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid #efefef
+}
+
+@media screen and (max-width:768px) {
+    .footer .cinfo form input {
+        width: 100%
+    }
+}
+/* F.5 Rimone logo */
+.footer .cinfo .logo img {
+    width: 70px
+}
+
+@media screen and (max-width:768px) {
+    .footer .fmenu {
+        margin-bottom: 30px
+    }
+}
+/* F.6 H5 Heading */
+.footer .fmenu h5 {
+    color: white;
+    font-size: 16px;
+    font-weight: 600
+}
+/* F.7 List formatting */
+.footer .fmenu ul.footer-list {
+    margin: 0;
+    padding: 0
+}
+
+.footer .fmenu ul.footer-list li {
+    list-style: none;
+    margin-bottom: 10px
+}
+
+.footer .fmenu ul.footer-list li a {
+    color: white
+}
+/* F.8 App logo section */
+.footer .app a {
+    display: block;
+    margin-bottom: 20px
+}
+/* F.9 App image CSS */
+.footer .app a img {
+    width: 200px;
+    border: 1px solid #efefef;
+    border-radius: 5px
+}
+
+@media screen and (max-width:768px) {
+    .footer .app a img {
+        width: 100%
+    }
+}
+/* F.10 Credits section */
+.footer .credit {
+    margin-top: 55px;
+    color: #ffffff
+}
+
+.footer .credit .cc {
+    text-align: left
+}
+
+@media screen and (max-width:768px) {
+    .footer .credit .cc {
+        margin-bottom: 30px;
+        text-align: center
+    }
+}
+/* F.11 T&C CSS */
+.footer .credit .terms {
+    text-align: center
+}
+
+@media screen and (max-width:768px) {
+    .footer .credit .terms {
+        margin-bottom: 30px
+    }
+}
+
+.footer .credit .terms a {
+    color: #ffffff
+}
+/* F.12 Social site logos */
+.footer .credit .social {
+    text-align: right
+}
+
+@media screen and (max-width:768px) {
+    .footer .credit .social {
+        text-align: center
+    }
+}
+
+.footer .credit .social a {
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    color: black;
+    margin-left: 10px
+}
+/* F.13 List formatting for social site logos */
+.footer .credit .social a i {
+    font-size: 15px
+}
+
+.panel {
+    left: -15.625em;
+    width: auto;
+    position: revert;
+    border-radius: 0 !important
+}
+
+.wrap {
+    position: relative
+}

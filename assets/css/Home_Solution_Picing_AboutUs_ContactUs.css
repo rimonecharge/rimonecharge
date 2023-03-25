@@ -1,0 +1,615 @@
+/* *******************************************************  Home Page  ******************************************************** */
+/******** Section 1 *********/
+/* 1.1 Home page video  */
+body header .video-background {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -99
+}
+@media screen and (max-width:768px) {
+    body header .video-background {
+        margin-top: 55px
+    }
+}
+body header .video-background video {
+    width: 100%
+}
+body .home header {
+    max-height: 700px
+}
+/******** Section 2 *********/
+/* 2.1 Coloum layout padding */ 
+body #page .service {
+    padding: 40px 0;
+    text-align: center
+}
+/* 2.2 H3 heading tag on home page */ 
+body #page .service h3 {
+    text-align: center;
+    color: #a19535;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px
+}
+/* 2.2.1 Horizontal line */
+body #page .service hr {
+    width: 50px;
+    border: 1px solid #efefef
+}
+/* 2.3 Coloumn layout */
+@media screen and (max-width:768px) {
+    body #page .service .item-wrapper {
+        margin-bottom: 50px
+    }
+}
+/* 2.3.1 Heading text for each coloumn */
+body #page .service .item-wrapper span {
+    display: block;
+    font-size: x-large
+}
+/* 2.3.2 Images for coloumn layout */
+body #page .service .item-wrapper img {
+    width: 100%
+}
+/* 2.3.3 Content for each coloumn */
+body #page .service .item-wrapper p.sinfo {
+    font-size: 15px;
+    color: grey;
+    line-height: 28px;
+    margin-bottom: 20px
+}
+/* 2.4 Button across whole page */
+body .btns a {
+    display: inline-block;
+    background: #ffc90e;
+    padding: 15px 30px;
+    border-radius: 3px;
+    color: black;
+    font-weight: 600
+}
+/******** Section 3 *********/
+/* 3.1 Brochure with slide */
+@media screen and (max-width:768px) {
+    body .hero .items {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    body .hero .items .htext {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2
+    }
+
+    body .hero .items .img-wrapper {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1
+    }
+}
+/* 3.1.1 Images CSS */
+body #page .hero .img-wrapper img {
+    width: 100%;
+    border-radius: 10px
+}
+/* 3.1.2 Heading text for slide */
+body #page .hero .htext span {
+    display: inline-block;
+    margin: 20px 0;
+    color: grey;
+    font-size: 17px
+}
+/* 3.1.3 H4 heading tag */
+body #page .hero .htext h4 {
+    font-size: 32px;
+    color: #a19535;
+    margin-bottom: 25px;
+    margin-top: 0
+}
+/* 3.1.4 Content text for slide */
+body #page .hero .htext .hinfo {
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 30px;
+    line-height: 25px
+}
+
+/******** Section 4 *********/
+/* 4.1 Tiles View */
+/* 4.1.1 Padding & Alignment */
+body #page .guide {
+    padding: 40px 0;
+    text-align: center
+}
+/* 4.1.2 H4 heading tag */
+body #page .guide h4 {
+    font-size: 32px;
+    color: #a19535;
+    margin-bottom: 25px;
+    margin-top: 0
+}
+/* 4.1.3 Horizontal line */
+body #page .guide hr {
+    width: 50px;
+    border: 1px solid #efefef;
+    margin-bottom: 30px
+}
+/* 4.1.4 Heading text for each tile */
+body #page .guide .item-wrapper span {
+    display: inline-block;
+    color: black;
+    font-size: 23px;
+    margin-bottom: 20px
+}
+/* 4.1.5 Image in each tile */
+body #page .guide .item-wrapper img {
+    width: 100%
+}
+/* 4.1.6 Paragraph tag for tile */
+body #page .guide .item-wrapper p {
+    font-size: 15px;
+    margin-top: 30px;
+    color: grey;
+    line-height: 25px
+}
+/******** Section 5 *********/
+/* 5.1 Bottom Image */
+body #page .btm-img {
+    margin-top: 20px
+}
+
+body #page .btm-img img {
+    width: 100%
+}
+
+/* ***************************************************** Solutions Page ****************************************************** */
+/******** Section 1 *********/
+/* 1.1 Padding for Start of page */
+.solution .pcontainer-wrapper {
+    padding-top: 100px
+}
+/* 1.1 Text Alignment for pcontainer class */
+.solution .pcontainer-wrapper .solutions {
+    padding: 40px 0 0 0;
+    text-align: center
+}
+/* 1.3 Heading "E-Mobility With Rimone" */
+.solution .pcontainer-wrapper .solutions h3 {
+    text-align: center;
+    color: #a19535;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+/* 1.3.1 HR tag for heading" */
+.solution .pcontainer-wrapper .solutions hr {
+    width: 50px;
+    border: 1px solid #efefef
+}
+/* 1.4 Pictures for Section 1" */
+.solution .pcontainer-wrapper .solutions .item-wrapper img {
+    width: 100%
+}
+/******** Section 2 *********/
+/* 2.1 Horizontal Slide View */
+.solution .pcontainer-wrapper .heros {
+    padding: 40px 0
+}
+
+.solution .pcontainer-wrapper .heros .item-wrapper .items {
+    overflow: auto;
+    display: inline-block;
+    margin: 40px 0
+}
+/* Animation/For small screens */
+@media screen and (max-width:768px) {
+    .solution .pcontainer-wrapper .heros .item-wrapper .items {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .solution .pcontainer-wrapper .heros .item-wrapper .items .htext {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2
+    }
+
+    .solution .pcontainer-wrapper .heros .item-wrapper .items .img-wrapper {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1
+    }
+}
+
+@media screen and (max-width:768px) {
+    .solution .pcontainer-wrapper .heros .item-wrapper .items .img-wrapper {
+        margin-bottom: 30px
+    }
+}
+/* 2.2 Images for Section 2 */
+.solution .pcontainer-wrapper .heros .item-wrapper .items .img-wrapper img {
+    width: 100%;
+    border-radius: 10px
+}
+/* 2.3 H4 tag */
+.solution .pcontainer-wrapper .heros .item-wrapper .items .htext h4 {
+    font-size: 32px;
+    color: #a19535;
+    margin-bottom: 25px;
+    margin-top: 0
+}
+/* 2.3 Descriptive text for horizontal Slides */
+.solution .pcontainer-wrapper .heros .item-wrapper .items .htext .hinfo {
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 15px;
+    line-height: 25px
+}
+/* 2.4 List format for Horizontal Slides*/
+.solution .pcontainer-wrapper .heros .item-wrapper .items .htext ul {
+    margin: 0;
+    padding-left: 16px
+}
+
+.solution .pcontainer-wrapper .heros .item-wrapper .items .htext ul li {
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 5px
+}
+/* ******************************************************* Pricing Page ******************************************************* */
+/******** Section 1 *********/
+/* 1.1 Container padding */
+.pricing .pcontainer-wrapper {
+    padding-top: 130px
+}
+/* 1.2 H3 Heading */
+.pricing .pcontainer-wrapper h3 {
+    text-align: center;
+    color: #a19535;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+/* 1.3 Paragraph */
+.pricing .pcontainer-wrapper p {
+    text-align: center;
+    font-size: 15px;
+    margin: 30px 0;
+    color: grey;
+    line-height: 25px
+}
+/******** Section 2 *********/
+/* 2.1 Image CSS  */
+.pricing .pcontainer-wrapper .btm-img {
+    margin-top: 20px
+}
+
+.pricing .pcontainer-wrapper .btm-img img {
+    width: 100%
+}
+/* 2.2 Benefits section */
+.pricing .pcontainer-wrapper .prices {
+    padding: 40px 0;
+    text-align: center
+}
+
+@media screen and (max-width:768px) {
+    .pricing .pcontainer-wrapper .prices {
+        text-align: left
+    }
+}
+/* 2.3 H3 Heading */
+.pricing .pcontainer-wrapper .prices h3 {
+    text-align: center;
+    color: #a19535;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+/* 2.4 Hrozintal line */
+.pricing .pcontainer-wrapper .prices hr {
+    width: 50px;
+    border: 1px solid #efefef
+}
+
+@media screen and (max-width:768px) {
+    .pricing .pcontainer-wrapper .prices .item-wrapper ul {
+        margin: 0px;
+        padding: 0
+    }
+}
+/* 2.5 List formatting */
+.pricing .pcontainer-wrapper .prices .item-wrapper ul li {
+    display: inline-block;
+    text-align: left;
+    width: 30%;
+    margin-bottom: 30px;
+    font-size: 17px
+}
+
+@media screen and (max-width:768px) {
+    .pricing .pcontainer-wrapper .prices .item-wrapper ul li {
+        width: 100%
+    }
+}
+/* 2.6 List heads */
+.pricing .pcontainer-wrapper .prices .item-wrapper ul li:before {
+    content: "\f111";
+    font-family: "FontAwesome";
+    vertical-align: middle;
+    margin-right: 8px;
+    font-size: 8px
+}
+
+/* ********************************************************** About Us Page ************************************************************** */
+/******** Section 1 *********/
+/* Heading with paragraph */
+/* 1.1 Padding for container */
+.about .pcontainer-wrapper {
+    padding-top: 130px
+}
+/* 1.2 H3 Heading */
+.about .pcontainer-wrapper h3 {
+    text-align: center;
+    color: #a19535;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+/* 1.3 Paragraph */
+.about .pcontainer-wrapper p {
+    text-align: center;
+    font-size: 15px;
+    color: grey;
+    line-height: 25px;
+    margin: 30px 0
+}
+/******** Section 2 *********/
+/* Horizontal Slides */
+/* 2.1 Padding top */
+.about .pcontainer-wrapper .abtheros {
+    padding: 40px 0
+}
+/* 2.2 CSS for each slide */
+.about .pcontainer-wrapper .abtheros .item-wrapper .items {
+    overflow: auto;
+    display: inline-block;
+    margin: 40px 0
+}
+
+@media screen and (max-width:768px) {
+    .about .pcontainer-wrapper .abtheros .item-wrapper .items {
+        margin-bottom: 0px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .about .pcontainer-wrapper .abtheros .item-wrapper .items .htext {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2
+    }
+
+    .about .pcontainer-wrapper .abtheros .item-wrapper .items .img-wrapper {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1
+    }
+}
+/* 2.3 Imae formatting for each slide */
+.about .pcontainer-wrapper .abtheros .item-wrapper .items .img-wrapper img {
+    width: 100%
+}
+/* 2.4 Text CSS for each slide */
+.about .pcontainer-wrapper .abtheros .item-wrapper .items .htext {
+    text-align: center;
+    margin: 40px 0
+}
+
+@media screen and (max-width:768px) {
+    .about .pcontainer-wrapper .abtheros .item-wrapper .items .htext {
+        margin-bottom: 0px
+    }
+}
+/* 2.5 H4 Heading for each slide */
+.about .pcontainer-wrapper .abtheros .item-wrapper .items .htext h4 {
+    font-size: 32px;
+    color: #a19535;
+    margin-bottom: 25px;
+    margin-top: 0
+}
+/* 2.6 Informative text for each slide */
+.about .pcontainer-wrapper .abtheros .item-wrapper .items .htext .hinfo {
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 15px;
+    line-height: 25px
+}
+/* 2.7 List Formatting */
+.about .pcontainer-wrapper .abtheros .item-wrapper .items .htext ul {
+    margin: 0;
+    padding-left: 16px
+}
+
+.about .pcontainer-wrapper .abtheros .item-wrapper .items .htext ul li {
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 5px
+}
+/******** Section 3 *********/
+/* 3.1 Carasoul padding */
+.about .pcontainer-wrapper .icons {
+    padding: 40px 0
+}
+
+.solution .pcontainer-wrapper .icons {
+    padding: 60px 0 30px 0
+}
+/* 3.2 H4 Heading for carasoul */
+.about .pcontainer-wrapper .icons h4 {
+    font-size: 32px;
+    color: #a19535;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-align: center
+}
+/* 3.3 Owl carasoul display alignment */
+.about .pcontainer-wrapper .icons .owl-carousel {
+    display: inline-block !important
+}
+
+.about .pcontainer-wrapper .icons .owl-carousel .owl-stage-outer {
+    overflow: hidden
+}
+/* 3.4 Image width in carasoul */
+.about .pcontainer-wrapper .icons .owl-feat-item img {
+    width: 100%
+}
+
+.about .pcontainer-wrapper .icons .owl-nav {
+    display: none
+}
+/* 3.5 Carasoul slide title alignment */
+.about .pcontainer-wrapper .icons .slidecaption {
+    z-index: 9999;
+    text-align: center
+}
+/* 3.6 Carasoul slide title formatting */
+.about .pcontainer-wrapper .icons .slide-title {
+    display: inline-block;
+    color: grey;
+    font-size: 20px;
+    line-height: 21px;
+    padding: 29px;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+    margin: 0
+}
+/* 3.7 Slide formatting */
+.about .pcontainer-wrapper .icons button.resize {
+    border-radius: 0;
+    background: black;
+    color: yellow;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+    text-shadow: none;
+    padding: 29px;
+    position: absolute;
+    right: 0;
+    z-index: 999999
+}
+/******** Section 4 *********/
+/* 4.1 Container padding  */
+.about .pcontainer-wrapper .ahero {
+    padding: 40px 0
+}
+/* 4.2 Image width */
+.about .pcontainer-wrapper .ahero .img-wrapper img {
+    width: 100%
+}
+/* 4.3 Text alignment */
+.about .pcontainer-wrapper .ahero .htext {
+    text-align: left
+}
+/* 4.4 Span text formatting */
+.about .pcontainer-wrapper .ahero .htext span {
+    display: inline-block;
+    margin: 20px 0;
+    color: grey;
+    font-size: 17px
+}
+/* 4.5 H4 Heading */
+.about .pcontainer-wrapper .ahero .htext h4 {
+    font-size: 32px;
+    color: #a19535;
+    margin-bottom: 25px;
+    margin-top: 0
+}
+/* 4.6 Informative text */
+.about .pcontainer-wrapper .ahero .htext .hinfo {
+    text-align: left;
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 30px;
+    line-height: 25px
+}
+
+/* **************************************************** Contact Us Page ****************************************************** */
+
+.contact .pcontainer-wrapper {
+    padding-top: 130px
+}
+
+.contact .pcontainer-wrapper h3 {
+    text-align: center;
+    color: #a19535;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+
+.contact .pcontainer-wrapper hr {
+    width: 50px;
+    border: 1px solid #efefef
+}
+
+.contact .pcontainer-wrapper .cdetails {
+    padding: 40px 0
+}
+
+.contact .pcontainer-wrapper .cdetails .items span {
+    display: inline-block;
+    margin: 20px 0;
+    color: grey;
+    font-size: 21px;
+    color: black
+}
+
+.contact .pcontainer-wrapper .cdetails .items .form form input,
+.contact .pcontainer-wrapper .cdetails .items .form form textarea {
+    border-radius: 5px;
+    border: 1px solid #efefef;
+    padding: 16px 20px;
+    font-size: 17px;
+    width: 100%;
+    margin-bottom: 22px;
+    color: grey
+}
+
+.contact .pcontainer-wrapper .cdetails .items .form form textarea {
+    height: 160px;
+    color: grey
+}
+
+.contact .pcontainer-wrapper .cdetails .items .form form input[type=submit] {
+    background: #ffc90e;
+    color: black
+}
+
+.contact .pcontainer-wrapper .cdetails .items .form form p {
+    font-size: 12px;
+    color: grey
+}
+
+.contact .pcontainer-wrapper .cdetails .items p {
+    font-size: 17px;
+    color: grey
+}
