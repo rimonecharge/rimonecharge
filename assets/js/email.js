@@ -15,7 +15,7 @@ function sendEmail() {
 	console.log(body);
 
 	Email.send({
-		SecureToken: "5CC38CB7DDC7814338AFC12D9B2546F69791",
+		SecureToken: "1a2c56b7-ef7d-4e23-84eb-2e3e5ee100e7",
 		To: "info@rimonecharge.com",
 		From: "rimtest246@gmail.com",
 		Subject: "New entry from Contact Us form: ",
@@ -45,14 +45,15 @@ function sendclientEmail() {
 	
 
 	let body = "Full Name : " + full_name + "<br /> Email : " + email + "<br /> Country : " + country + "<br /> Phone Number : " + phone_no +
-		"<br /> Address : " + address + "<br /> City : " + city + "<br /> State : " + state + "<br /> Location type : " + location_type +
-		"<br /> Enquiry Type : " + enquiry_type + "<br /> Message : " + message + 
-		"<br /> Other Enquiry : " + otherEnquiryInput.value + "<br /> Other Location : " + otherLocationInput.value;
+		"<br /> Address : " + address + "<br /> City : " + city + "<br /> State : " + state + 
+		"<br /> Location type : " + location_type + "<br /> Other Location : " + otherLocationInput.value +
+		"<br /> Enquiry Type : " + enquiry_type + "<br /> Other Enquiry : " + otherEnquiryInput.value +
+		"<br /> Message : " + message;
 
 	console.log(body);
 
 	Email.send({
-		SecureToken: "5CC38CB7DDC7814338AFC12D9B2546F69791",
+		SecureToken: "1a2c56b7-ef7d-4e23-84eb-2e3e5ee100e7",
 		To: "info@rimonecharge.com",
 		From: "rimtest246@gmail.com",
 		Subject: "New entry from Client Us form : ",
@@ -95,48 +96,6 @@ function showEnquiryTextbox() {
 	  otherOptionInput.required = false;
 	}
   }
-
-
-
-
-// type = "text/javascript"
-// function showlocation(name) {
-// 	if (name == 'Other') document.getElementById('div1').innerHTML = 'Other: <input type="text" name="other" id="div1" class="other_location" />';
-// 	else document.getElementById('div1').innerHTML = '';
-// }
-// type = "text/javascript"
-// function showquery(name) {
-// 	if (name == 'Other Enquiry') document.getElementById('div2').innerHTML = 'Other: <input type="text" name="other" id="div2" class="other_query" />';
-// 	else document.getElementById('div2').innerHTML = '';
-// }
-
-
-// Disable right click
-// document.addEventListener('contextmenu', event => event.preventDefault());
-
-
-// To disable autocomplete
-// document.addEventListener("DOMContentLoaded", function () {
-// 	document.getElementById("form").setAttribute("autocomplete", "off");
-// });
-
-// <!-- Backend function for country code -->
-// <script>
-//   var input = document.querySelector("#phoneNumber");
-//   window.intlTelInput(input, {
-// 	// show dial codes too
-// 	separateDialCode: true,
-// 	// If there are some countries you want to show on the top.
-// 	preferredCountries: ["in", "us"],
-// 	//Default country
-// 	initialCountry: "in",
-// 	// show only these countres, remove all other
-// 	//onlyCountries: ["ru", "cn", "pk", "sg", "my", "bd"],
-// 	// If there are some countries you want to execlde.
-// 	// here we are exluding india and israel.
-// 	//excludeCountries: ["in", "il"]
-//   });
-
 
 
 
