@@ -1,0 +1,468 @@
+/************************************************************ Newsroom Page ****************************************************************/
+/* Section 1 Newsroom Slider */
+
+.nw-section1 {
+    height: auto;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    margin-top: 4%;
+    padding-bottom: 1%;
+
+    padding-top: 1%;
+  }
+  
+  .nw-section1 h2 {
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .slick-carousel {
+    width: 100%;
+  }
+  /* Set maximum dimensions for the images */
+  .slick-carousel img {
+    width: 100%; /* Adjust as needed */
+    height: 350px;
+    object-fit: cover;
+  }
+  
+  /* Change the color of the navigation dots */
+  /* Change the color of the navigation dots */
+  .slick-slider .slick-dots li button {
+    background-color: rgba(255, 255, 255, 0.145);
+  border-radius: 100px;}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Sectio 2 - Latest Updates*/
+  
+  /* Additional Information Section Styles */
+  .nw-section2 {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    margin:0%;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .nw-section2 h2{
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+  }
+  
+  /* Pagination Styles */
+  /* .pagination {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  } */
+
+  /* Style the pagination buttons */
+.pagination button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the images within the buttons */
+.pagination button img {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    vertical-align: middle; /* Center the image vertically */
+}
+
+/* Style the page number (if needed) */
+.page-number {
+    margin: 0 10px; /* Adjust the spacing as needed */
+    font-weight: bold;
+}
+  
+  .prev-page,
+  .next-page,
+  .page-number {
+    font-size: 10px;
+    margin: 0 10px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .prev-page:hover,
+  .next-page:hover,
+  .page-number:hover {
+    color: #000000;
+  }
+  
+  /* Content Container Styles */
+  .content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Page Styles */
+  .page {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    padding-left: 2%;
+  }
+  
+  /* Item Styles */
+  .info-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .image-on-left img {
+    width: 400px;
+    height: 200px;
+    margin-right: 20px;
+    object-fit: cover; 
+  }
+  
+  .text-on-right {
+    text-align: center;
+    width: 100%;
+    height: 200px;
+  
+  }
+  
+  /* Header Styles */
+  .info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .date{
+    font-size: 15px;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: lighter;
+    font-style: italic;
+    color: grey;
+  }
+  
+  .collapsible {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 95%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-weight: bold;
+  }
+  
+  
+  .nwcontent {
+    max-width: 99%;
+    align-items: center;
+    display: none;
+    background-color: white;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+  }
+  
+  /* Media Queries for Tablet and Mobile */
+  @media (max-width: 768px) {
+    .info-item {
+      flex-direction: column;
+    }
+  
+    .image-on-left img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  
+  
+  /* Section 3 - All Around the Globe */    
+  
+  .nw-section3 {
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    padding: 0;
+    background-color: #000000;
+  }
+  .content-container{
+    width: 100%;
+    padding: 0%;
+  }
+  
+  .nw-section-heading {
+    padding: 20px 0px 0 20px;
+    text-align: left;
+    margin-left: 10px;
+    color: #f5f5f5;
+    font-size: 40px;
+  }
+  
+  /* Card Styles */
+  .card-slider {
+    overflow: hidden; /* Hide overflowing cards */
+    padding: 20px;
+    width: 100%;/* Allow it to take full width */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+  }
+  
+  /* Add CSS to style the card container */
+  .card-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    /* Remove the gap property */
+  padding: 20px 20px 40px 20px  ;
+    width: 100%;
+  }
+  
+  
+  /* Show the scrollbar and hide the navigation buttons */
+  .card-slider::-webkit-scrollbar {
+    width: 8px; /* Adjust the scrollbar width as needed */
+    height: 8px; /* Adjust the scrollbar height as needed */
+  }
+  
+  .prev-button, .next-button {
+    display: none; /* Hide the navigation buttons */
+  }
+  
+  /* Allow scrolling by setting overflow to auto */
+  .card-slider {
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+  
+  .card {
+    flex: 0 0 calc(33.33% - 20px); /* 3 cards per row with 20px gap for desktop */
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.1s;
+    flex-direction: column;
+    background-color: #ffffffc4; /* Grey background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.496); /* Box shadow for a modern look */
+    margin-right: 20px; /* Add margin to separate cards */
+    height: 42vh;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: 250px;
+    align-items: center;
+    align-items: center;
+    object-fit: cover;
+    padding: 3%;
+    border-radius: 20px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    margin: 2%;
+    align-items: center;
+  }
+  
+  /* Popup Styles */
+  .popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup {
+    background-color: #fff;
+    width: 60%;
+    height: 50vh;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Adjust card width for tablet (2 cards per row) */
+  @media screen and (max-width: 768px) {
+    .card {
+      flex: 0 0 calc(50% - 20px); /* 2 cards per row with 20px gap for tablet */
+    }
+  }
+  
+  /* Adjust card width for mobile (1 card per row) */
+  @media screen and (max-width: 480px) {
+    .card {
+      flex: 0 0 100%; /* 1 card per row for mobile */
+    }
+  }
+  
+  
+  /* Section 4 - Additional Information */
+  
+  
+  .nw-section4 {
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .nw-section4 h2 {
+    font-size: 40px;
+    align-items: center;
+    text-align: center;
+    margin: 20px 20px 40px 20px;
+  }
+  
+  .info-container {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 40px;
+    width: 90%;
+  }
+  
+  .info-element {
+    display: flex;
+    justify-content: space-between; /* Space out text and image */
+    align-items: center; /* Center elements vertically */
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  }
+  
+  .info-element img {
+    max-width: 100%;
+    height: 20%;
+    width: 30%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 1%;
+  }
+  
+  /* For mobile and tablet screens, switch to a column layout */
+  @media screen and (max-width: 768px) {
+    .info-container {
+      flex-direction: column; /* Change to a column layout for mobile screens */
+  
+    }
+  
+    .info-element {
+      flex-direction: column; /* Change to a column layout for mobile screens */
+    }
+  
+    .info-element img {
+      flex-direction: column;
+      align-items: center;
+      width: 90%; /* Adjust image width for mobile screens */
+      margin: 5%; /* Adjust margin for mobile screens */
+    }
+  
+    .info-text {
+      flex-direction: column;
+      align-items: center;
+      margin: 4%; /* Adjust margin for mobile screens */
+    }
+  }
+  /* Add this media query for screens with a maximum width of 480px (typical for phones) */
+  @media screen and (max-width: 480px) {
+    .info-container {
+      flex-direction: column; /* Change to a column layout for mobile screens */
+  
+    }
+  
+    .info-element {
+      flex-direction: column; /* Change to a column layout for mobile screens */
+    }
+  
+    .info-element img {
+      flex-direction: column;
+      align-items: center;
+      width: 80%; /* Adjust image width for mobile screens */
+      margin: 10%; /* Adjust margin for mobile screens */
+    }
+  
+    .info-text {
+      flex-direction: column;
+      align-items: center;
+      margin: 4%; /* Adjust margin for mobile screens */
+    }
+  }
+  
+  /* Alternate the text position for every other element */
+  .info-element:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  .info-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Additional styling for the text content */
+  .info-text h3 {
+    font-size: 20px;
+    margin: 0px 20px 0px 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .info-text p {
+    font-size: 16px;
+    margin: 10px 0;
+    margin: 30px 20px 0px 20px;
+    text-align: justify;
+    color: #555555c2;
+  }
+  
+  /* Additional styling for alternate elements */
+  .info-element.alternate {
+    flex-direction: row;
+  }
