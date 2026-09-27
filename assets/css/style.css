@@ -460,6 +460,43 @@ h4 { font-size: clamp(1.25rem, 2vw, 1.75rem); }
   }
 }
 
+/* ---------- Desktop header layout ----------
+   With "Start Charging" added, the centred nav is wide enough to run into the
+   absolutely-positioned logo on narrow laptops. From 769px up the header bar
+   becomes a 3-column grid (logo | nav | spacer) so the nav sits in its own
+   track and stays centred without overlapping. Phones are untouched — they
+   keep the original layout and the hamburger menu.  */
+@media (min-width: 769px) {
+  .site-header .container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: var(--space-md);
+  }
+
+  .brand-logo {
+    position: static;
+    left: auto;
+    justify-self: start;
+  }
+
+  .main-nav {
+    justify-self: center;
+  }
+}
+
+/* Narrow laptops: tighten the links so all six fit on one row. */
+@media (min-width: 769px) and (max-width: 991px) {
+  .brand-logo img {
+    height: 38px;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.82rem;
+  }
+}
+
 /* ============================================================
    HERO SECTION
    ============================================================ */
