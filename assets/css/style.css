@@ -368,6 +368,18 @@ h4 { font-size: clamp(1.25rem, 2vw, 1.75rem); }
   transform: scale(1.08);
 }
 
+/* Site footer: badges bigger and stacked one per line */
+.site-footer .footer-apps {
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.site-footer .footer-apps a img {
+  height: 48px;
+  width: auto;
+}
+
 /* Mobile Menu Toggle */
 .menu-toggle {
   display: none;
@@ -482,6 +494,11 @@ h4 { font-size: clamp(1.25rem, 2vw, 1.75rem); }
 
   .main-nav {
     justify-self: center;
+  }
+
+  /* Desktop: drop the bar a little from the top edge */
+  .site-header {
+    padding: 1.25rem 0 0.75rem;
   }
 }
 
